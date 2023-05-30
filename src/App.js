@@ -1,10 +1,12 @@
 import Header from './components/header/header'
+import Promo from './components/promo/promo';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello React!</h1>
+      
       <Header/>
+      <Promo />
     </div>
   );
 }
