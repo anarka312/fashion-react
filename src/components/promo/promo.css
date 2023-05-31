@@ -4,7 +4,7 @@
 
 .promo__content {
     border-radius: 59px;
-    border-color: #F4F6F5;
+    background-color: #F4F6F5;
 
     display: flex;
     column-gap: 24px;
@@ -26,12 +26,14 @@
     font-style: 32px;
     line-height: 1.5;
     letter-spacing: -0.05em;
+    margin-bottom: 32px;
 }
 
 .promo__btn-wrapper {
     display: flex;
     column-gap: 34px;
     align-items: center;
+    margin-bottom: 90px;
 }
 
 .promo__btn-wrapper::before {
@@ -61,11 +63,30 @@
 
 .highlight {
     position: relative;
+    display: inline-block;
 }
+
+.highlight span {
+    position: relative;
+    z-index: 1;
+   
+}
+
 
 .highlight::before {
     content: "";
     display: block;
     position: absolute;
+    top: -12px;
+    bottom: -12px;
+    left: -20px;
+    right: -160px;
+    background-color: #fff;
+    transform: rotate(-2deg);
 
+}
+
+.highlight--yellow::before {
+    background-color: var(--yellow);
+    right: -110px;
 }
