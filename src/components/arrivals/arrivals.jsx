@@ -1,3 +1,4 @@
+import Card from '../card/card'
 import './arrivals.css'
 
 const Arrivals = () => {
@@ -7,7 +8,11 @@ const Arrivals = () => {
             <div className="arrivals__header">
                 <h2 className="title__2">NEW ARRIVALS</h2>
             </div>
-            <div className="arrivals__card"></div>
+            <div className="arrivals__card">
+                <Card />
+                <Card />
+                <Card />
+            </div>
         </div>
     </section> 
     );
