@@ -4,12 +4,34 @@
 }
 
 .card:hover .card__img {
-    opacity: 0.8;
+    animation: opacity 0.2s ease-in-out;
 }
 
 @keyframes opacity {
     0% {
-        overflow: 1px;
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.card:hover .card__icon {
+    animation: slide 0.5s ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: -20px;
+    }
+    100% {
+        left: 0;
     }
 }
 
@@ -50,4 +72,8 @@
     line-height: 2.08;
     letter-spacing: -0.04em;
     color: #7F7F7F;
+}
+
+.card__icon {
+    position: relative;
 }

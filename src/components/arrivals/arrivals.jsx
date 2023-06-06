@@ -1,6 +1,10 @@
 import Card from '../card/card'
 import './arrivals.css'
 
+import cat01img from './../../img/categories/cat-01.jpg'
+import cat02img from './../../img/categories/cat-02.jpg'
+import cat03img from './../../img/categories/cat-03.jpg'
+
 const Arrivals = () => {
     return ( 
     <section className="arrivals">
@@ -9,9 +13,9 @@ const Arrivals = () => {
                 <h2 className="title__2">NEW ARRIVALS</h2>
             </div>
             <div className="arrivals__card">
-                <Card />
-                <Card />
-                <Card />
+                <Card title="Hoodies & Sweetshirt" img={cat01img}/>
+                <Card title="Coats & Parkas" img={cat02img}/>
+                <Card title="Tees & T-Shirt" img={cat03img}/>
             </div>
         </div>
     </section> 
